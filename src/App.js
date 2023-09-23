@@ -24,7 +24,7 @@ function App() {
       <div className='floating'><img className='sphere' src={laptopImage} alt='Floating' /></div>
       <div className='floating2'><img className='sphere2' src={laptopImage} alt='Floating' /></div>
       <div  className='text-mobile'>
-        <p ><span style={{ color: '#1bfaff' }}>Welcome,</span><br/>
+        <p className='text-only'><span style={{ color: '#1bfaff' }}>Welcome,</span><br/>
         to my portfolio<br/>
         <div style={{display: 'flex', justifyContent: 'center', paddingTop: '15px'}}><span style={{ color: '#1bfaff', position: 'center', fontSize: '15px' }}>-Robert Martinovic-</span></div>
         </p>
