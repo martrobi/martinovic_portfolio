@@ -205,7 +205,7 @@ body {
        display: flex;
   justify-content: center; /* Horizontally center */
   align-items: center; /* Vertically center */
-  min-height: 90vh;
+  min-height: 70vh;
   font-size: 30px;
   font-family: monospace;
     }
@@ -349,6 +349,5 @@ body {
       font-family: monospace;
       font-size: 15px;
     }
-    
     
   }
