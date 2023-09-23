@@ -7,7 +7,7 @@ function NavMenu({ onNavItemClick }) {
         <p><span style={{ color: '#1bfaff' }}>Robert Martinović - </span>Frontend Developer</p>
       </div>
     <div className="navmenu">
-      <ul>
+      <ul className='nav-list'>
       <li>
           <a href="#" onClick={() => onNavItemClick('App')}>Home</a>
         </li>

@@ -16,9 +16,9 @@ body {
 
   .container {
     position: absolute;
-    top: 50%; /* Postavite na sredinu visine stranice */
+    top: 50%; 
     left: 60px;
-    transform: translateY(-50%); /* Centrirajte vertikalno */
+    transform: translateY(-50%); 
   }
 
   .container {
@@ -31,19 +31,26 @@ body {
     background-image: url('./slika1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    color: white; /* Postavite boju fonta na belu */
-    text-align: left; /* Centriraj tekst horizontalno */
+    color: white; 
+    text-align: left; 
   }
   
   .container-text{
-    font-size: 12px; /* Postavite veličinu fonta prema potrebi */
+    font-size: 13px; 
     font-family: monospace;
-    padding-left: 45px;
-    padding-right: 35px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
-
+  .container-text-contact{
+    font-size: 17px; 
+    font-family: monospace;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .navcontainer {
     display: flex;
     justify-content: space-between;
@@ -71,29 +78,32 @@ body {
   }
   
   .navmenu ul {
-    list-style: none; /* Ukloni tačke ispred linkova */
-    padding: 0; /* Ukloni unutarnji prostor (padding) */
-    text-align: center; /* Centriraj linkove horizontalno */
+    list-style: none; 
+    padding: 0; 
+    text-align: center;
   }
   
   .navmenu li {
-    display: inline; /* Linkovi stoje jedan pored drugog */
-    margin-right: 20px; /* Razmak između linkova */
+    display: inline; 
+    margin-right: 20px; 
   }
   
+  .navmenu li a:hover {
+    color: #1bfaff;
+  }
   .navmenu a {
-    text-decoration: none; /* Ukloni podvučene linkove */
-    color: white; /* Bela boja teksta */
+    text-decoration: none; 
+    color: white; 
   }
 
   .image-grid {
     display: grid;
     padding-top: 25px;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 mreža */
-    grid-gap: 4px; /* Razmak između slika i teksta */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 4px; 
     grid-column-gap: 30px;
-    justify-items: center; /* Centriraj horizontalno */
-    align-items: center; /* Centriraj vertikalno */
+    justify-items: center; 
+    align-items: center; 
     font-family: monospace;
     font-size: 15px;
   }
@@ -104,12 +114,13 @@ body {
   }
   
   .image-card img {
-    max-width: 100%; /* Slike se automatski skaliraju */
-    max-height: 90px; /* Visina slika */
+    max-width: 100%; 
+    max-height: 90px;
   }
 
 .text{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
 
 .hiperveza{
@@ -117,13 +128,13 @@ body {
   color: white;
 }
 
-/* style.css */
+
 .floating {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateY(0) rotate(0deg);
-  animation: floatAndRotate 1s linear infinite, rotate 20s linear infinite; /* Adjust the durations */
+  animation: floatAndRotate 1s linear infinite, rotate 20s linear infinite; 
 }
 
 @keyframes floatAndRotate {
@@ -131,7 +142,7 @@ body {
     transform: translate(-50%, -50%) translateY(0) rotate(0deg);
   }
   50% {
-    transform: translate(-50%, -70%) translateY(-50px) rotate(180deg); /* Larger vertical motion */
+    transform: translate(-50%, -70%) translateY(-50px) rotate(180deg); 
   }
   100% {
     transform: translate(-50%, -50%) translateY(0) rotate(0deg);
@@ -143,11 +154,142 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg); /* Slower rotation */
+    transform: translate(-50%, -50%) rotate(360deg); 
   }
 }
 
   .sphere{
     width: 150px;
     height: 150px;
+  }
+
+  .sphere2{
+    width: 70px;
+    height: 70px;
+  }
+
+  .floating2{
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+    animation: floatAndRotate 1s linear infinite, rotate 20s linear infinite; 
+    
+  }
+  
+  @keyframes floatAndRotate {
+    0% {
+      transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -70%) translateY(-50px) rotate(180deg); 
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg); 
+    }
+  }
+    /*Responzivni dizajn*/
+
+  @media (min-width: 993px) {
+    .floating2,.text-mobile {
+      display: none;
+    }
+    
+  }
+
+  @media (max-width: 993px) {
+    .floating {
+      display: none;
+    }
+    .text-mobile{
+      color: white;
+       display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  min-height: 100vh;
+  font-size: 30px;
+  font-family: monospace;
+  padding-left: 30px;
+  padding-right: 20px;
+    }
+  }
+
+  @media (max-width: 993px) {
+    .blok,.name {
+      display: none;
+    }
+   
+      .navmenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px; /* Visina navmenija */
+        color: #fff; /* Boja teksta */
+        z-index: 1000;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px; /* Visina 100% visine zaslona */
+        width: 300px;
+      }
+      .container-text{
+        font-size: 10px; 
+        font-family: monospace;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .container-text-contact{
+        font-size: 14px; 
+        font-family: monospace;
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+      }
+      .text{
+        font-size: 10px;
+        margin-bottom: 20px;
+        
+      }
+      .image-card {
+        text-align: center;
+        color: white;
+      }
+      
+      .image-card img {
+        max-width: 100%; 
+        max-height: 70px;
+      }
+      .image-grid {
+        display: grid;
+        padding-top: 25px;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 0px; 
+        grid-column-gap: 30px;
+        justify-items: center; 
+        align-items: center; 
+        font-family: monospace;
+        font-size: 11px;
+      }
+      
   }
