@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/martinovic_portfolio/static/css/main.93784a4c.css",
-    "main.js": "/martinovic_portfolio/static/js/main.8a965391.js",
+    "main.css": "/martinovic_portfolio/static/css/main.ae9aacb7.css",
+    "main.js": "/martinovic_portfolio/static/js/main.83e4b8fb.js",
     "static/media/pozadina.png": "/martinovic_portfolio/static/media/pozadina.30af9f88e21b66924314.png",
-    "static/media/laptop.png": "/martinovic_portfolio/static/media/laptop.a088e8dc982fc7713ccc.png",
+    "static/media/atom.png": "/martinovic_portfolio/static/media/atom.a088e8dc982fc7713ccc.png",
     "static/media/React.png": "/martinovic_portfolio/static/media/React.ba5aba69cd8722c7b1f8.png",
     "static/media/JavaScript.png": "/martinovic_portfolio/static/media/JavaScript.846713c6c1f31ea98f17.png",
     "static/media/HTML5.png": "/martinovic_portfolio/static/media/HTML5.37a669285a8d8f5c6db7.png",
     "static/media/CSS3.png": "/martinovic_portfolio/static/media/CSS3.56f415689155ccd04ce7.png",
     "index.html": "/martinovic_portfolio/index.html",
-    "main.93784a4c.css.map": "/martinovic_portfolio/static/css/main.93784a4c.css.map",
-    "main.8a965391.js.map": "/martinovic_portfolio/static/js/main.8a965391.js.map"
+    "main.ae9aacb7.css.map": "/martinovic_portfolio/static/css/main.ae9aacb7.css.map",
+    "main.83e4b8fb.js.map": "/martinovic_portfolio/static/js/main.83e4b8fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.93784a4c.css",
-    "static/js/main.8a965391.js"
+    "static/css/main.ae9aacb7.css",
+    "static/js/main.83e4b8fb.js"
   ]
 }
