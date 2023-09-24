@@ -55,12 +55,9 @@
         width: 300px;
       }
       .container-text{
-        font-size: 10px; 
+        font-size: 9px; 
         font-family: monospace;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 50px 30px 50px 30px;
       }
       .container-text-contact{
         font-size: 14px; 
