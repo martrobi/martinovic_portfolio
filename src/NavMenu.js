@@ -1,5 +1,6 @@
 import React from 'react';
-
+import '../src/style/style.css';
+import '../src/style/responsive.css';
 function NavMenu({ onNavItemClick }) {
   return (
     <div className='navcontainer'>
@@ -17,7 +18,7 @@ function NavMenu({ onNavItemClick }) {
         <li>
           <a href="#" onClick={() => onNavItemClick('About')}>About</a>
         </li>
-        <li>
+        <li className='li-contact'>
           <a href="#" onClick={() => onNavItemClick('Contact')}>Contact</a>
         </li>
       </ul>

@@ -1,9 +1,10 @@
 import React from 'react';
-import slika1 from './HTML5.png';
-import slika2 from './CSS3.png';
-import slika3 from './JavaScript.png';
-import slika4 from './React.png';
-import '../src/style.css';
+import slika1 from './images/HTML5.png';
+import slika2 from './images/CSS3.png';
+import slika3 from './images/JavaScript.png';
+import slika4 from './images/React.png';
+import '../src/style/style.css';
+import '../src/style/responsive.css';
 function Skills() {
     
   return (

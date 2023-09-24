@@ -1,24 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
 import NavMenu from './NavMenu';
-import '../src/style.css';
-import laptopImage from './laptop.png';
+import '../src/style/style.css';
+import '../src/style/responsive.css';
+import atom from './images/atom.png';
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState(null);
-  const [isFloating2Hidden, setIsFloating2Hidden] = useState(false);
+  const [activeComponent, setActiveComponent] = useState('App'); 
+  const [isFloatingVisible, setIsFloatingVisible] = useState(true);
+  const [isTextVisible, setIsTextVisible] = useState(true); 
 
   const handleNavItemClick = (componentName) => {
     setActiveComponent(componentName);
-    
-    if (componentName === 'Skills' || componentName === 'About' || componentName === 'Contact') {
-      setIsFloating2Hidden(true);
-    } else {
-      setIsFloating2Hidden(false);
-    }
   };
+
+  useEffect(() => {
+    const updateVisibility = () => {
+      setIsFloatingVisible(
+        window.innerWidth > 993 || activeComponent === 'App'
+      );
+      setIsTextVisible(
+        window.innerWidth <= 993 && activeComponent === 'App'
+      );
+    };
+
+    window.addEventListener('resize', updateVisibility);
+
+    updateVisibility();
+
+    return () => {
+      window.removeEventListener('resize', updateVisibility);
+    };
+  }, [activeComponent]);
 
   return (
     <div>
@@ -28,19 +43,39 @@ function App() {
         {activeComponent === 'About' && <About />}
         {activeComponent === 'Contact' && <Contact />}
       </div>
-      {!isFloating2Hidden && (
-        <div className='floating2'><img className='sphere2' src={laptopImage} alt='Floating' /></div>
+      {isFloatingVisible && (
+        <div className='floating'>
+          <img className='sphere' src={atom} alt='Floating' />
+        </div>
       )}
-      <div className='floating'><img className='sphere' src={laptopImage} alt='Floating' /></div>
-      <div className='text-mobile'>
-        <p className='text-only'><span style={{ color: '#1bfaff' }}>Welcome,</span><br/>
-        to my portfolio<br/>
-        <div style={{display: 'flex', justifyContent: 'center', paddingTop: '15px'}}><span style={{ color: '#1bfaff', position: 'center', fontSize: '15px' }}>-Robert Martinovic-</span></div>
-        </p>
-      </div>
+      {isTextVisible && (
+        <div className='text-mobile'>
+          <p className='text-only'>
+            <span style={{ color: '#1bfaff' }}>Welcome,</span>
+            <br />
+            to my portfolio
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                paddingTop: '15px',
+              }}
+            >
+              <span
+                style={{
+                  color: '#1bfaff',
+                  position: 'center',
+                  fontSize: '15px',
+                }}
+              >
+                -Robert Martinovic-
+              </span>
+            </div>
+          </p>
+        </div>
+      )}
     </div>
   );
 }
 
 export default App;
-

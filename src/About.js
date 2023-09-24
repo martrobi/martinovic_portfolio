@@ -1,6 +1,6 @@
 import React from 'react';
-
-import '../src/style.css';
+import '../src/style/style.css';
+import '../src/style/responsive.css';
 function About() {
     
   return (
