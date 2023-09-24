@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/martinovic_portfolio/static/css/main.ae9aacb7.css",
+    "main.css": "/martinovic_portfolio/static/css/main.e8cfccad.css",
     "main.js": "/martinovic_portfolio/static/js/main.83e4b8fb.js",
     "static/media/pozadina.png": "/martinovic_portfolio/static/media/pozadina.30af9f88e21b66924314.png",
     "static/media/atom.png": "/martinovic_portfolio/static/media/atom.a088e8dc982fc7713ccc.png",
@@ -9,11 +9,11 @@
     "static/media/HTML5.png": "/martinovic_portfolio/static/media/HTML5.37a669285a8d8f5c6db7.png",
     "static/media/CSS3.png": "/martinovic_portfolio/static/media/CSS3.56f415689155ccd04ce7.png",
     "index.html": "/martinovic_portfolio/index.html",
-    "main.ae9aacb7.css.map": "/martinovic_portfolio/static/css/main.ae9aacb7.css.map",
+    "main.e8cfccad.css.map": "/martinovic_portfolio/static/css/main.e8cfccad.css.map",
     "main.83e4b8fb.js.map": "/martinovic_portfolio/static/js/main.83e4b8fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae9aacb7.css",
+    "static/css/main.e8cfccad.css",
     "static/js/main.83e4b8fb.js"
   ]
 }
